@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+  <title>Clinisync — Alyssa Falcon</title>
+ 
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css" />
+ 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+ 
+<body>
+ 
+<div id="cursor"></div>
+ 
+<!-- NAV -->
+<nav class="case-nav">
+ 
+  <a href="homepage.html" class="back-btn">
+    Back to Portfolio
+  </a>
+ 
+  <div class="case-nav-links">
+    <a href="about.html">About Me</a>
+    <a href="homepage.html#projects">Projects</a>
+    <a href="#">Resume</a>
+  </div>
+ 
+</nav>
+ 
+<!-- CASE STUDY CONTENT -->
+<div class="case-study-content">
+ 
+  <!-- META -->
+  <div class="case-meta">
+ 
+    <div class="meta-col">
+      <div class="meta-label">Role</div>
+      <div class="meta-value">UX Designer</div>
+    </div>
+ 
+    <div class="meta-col">
+      <div class="meta-label">Skills</div>
+      <div class="meta-skills">
+        Research<br>
+        Wireframing<br>
+        Prototyping
+      </div>
+    </div>
+ 
+    <div class="meta-col">
+      <div class="meta-label">Duration</div>
+      <div class="meta-value">5 Weeks</div>
+    </div>
+ 
+  </div>
+ 
+  <!-- HERO -->
+  <h1 class="case-hero-title">Clinisync</h1>
+ 
+  <p class="case-intro">
+    A mid-shift discovery that a critical supply has run out shouldn't cost a nurse ten minutes of scrambling — or cost a patient their care. Clinisync is a mobile inventory app designed to keep clinic staff informed and in control, so they can stay where they're needed most: with their patients.
+  </p>
+ 
+  <!-- RESEARCH -->
+  <div class="case-section">
+ 
+    <h2>Research and Discovery</h2>
+ 
+    <h3>Starting with the Right Question</h3>
+ 
+    <p>
+      Before designing a single screen, I needed to understand what it actually felt like to manage inventory in a busy clinic. Not from a systems perspective — from a human one. What was it like to be the nurse who opens the supply cabinet and finds it empty? The MA who has to interrupt patient care to track down gauze?
+    </p>
+ 
+    <h3>What I Found</h3>
+ 
+    <p>
+      Through secondary research — online forums, nursing reports, and firsthand accounts from clinical staff — a clear picture emerged. These weren't edge cases or occasional frustrations. They were daily realities.
+    </p>
+ 
+    <ul class="key-findings">
+      <li>Supplies ran out regularly because there was simply no system to monitor them in real time.</li>
+      <li>Nurses and MAs were quietly improvising — alerting the clinic through sticky notes, verbal handoffs, or not at all.</li>
+      <li>Every single person said the same thing: they wanted something better. Not something complex — just something that <em>worked</em>.</li>
+    </ul>
+ 
+    <p>
+      The consequences were bigger than a missing box of gloves. Stock-outs disrupted clinical workflows, eroded trust in the systems meant to support staff, and — most critically — pulled time and attention away from patients.
+    </p>
+ 
+  </div>
+ 
+  <!-- DEFINE -->
+  <div class="case-section">
+ 
+    <h2>Define</h2>
+ 
+    <h3>Naming the Problem</h3>
+ 
+    <div class="callout">
+      Clinical staff struggle to manage medical inventory because systems are inaccessible, data is often inaccurate or outdated, and there is no centralized way to track supplies — leading to workflow disruptions and reduced focus on patient care.
+    </div>
+ 
+    <h3>Meeting the Users</h3>
+ 
+    <p>
+      To keep the design grounded in real people, I built out personas representing the nurses and medical assistants who would actually use Clinisync day-to-day. These weren't abstract profiles — they were anchors, reminding me throughout the process whose problems I was solving.
+    </p>
+ 
+    <div style="display: flex; gap: 1rem; align-items: flex-start;">
+      <img src="images/Clinisync_Persona_1.png" alt="Clinisync persona 1" class="case-image" style="width: 50%; margin: 0;" />
+      <img src="images/Clinisync_Persona_2.png" alt="Clinisync persona 2" class="case-image" style="width: 50%; margin: 0;" />
+    </div>
+ 
+    <h3>Design Goals</h3>
+ 
+    <p>
+      With the research findings and personas in hand, I translated what I'd learned into three guiding principles — not feature requirements, but promises the app needed to keep every single time a staff member opened it.
+    </p>
+ 
+    <div class="design-goals-grid">
+ 
+      <div class="goal-card">
+        <h4>Clarity</h4>
+        <p>In a fast-paced clinic, no one has time to decode a confusing interface. Every piece of inventory information needed to be scannable at a glance.</p>
+      </div>
+ 
+      <div class="goal-card">
+        <h4>Speed</h4>
+        <p>Checking stock, logging an update, or flagging a shortage had to happen in seconds — not while a patient waited.</p>
+      </div>
+ 
+      <div class="goal-card">
+        <h4>Reliability</h4>
+        <p>The whole system only works if people trust it. Real-time accuracy wasn't a nice-to-have; it was the foundation everything else was built on.</p>
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+  <!-- IDEATE -->
+  <div class="case-section">
+ 
+    <h2>Ideate</h2>
+ 
+    <h3>Mapping the Journey</h3>
+ 
+    <p>
+      I started with user flows before touching any visual design. I wanted to trace exactly how a nurse would move through the app — from opening it mid-shift to finding what they need and moving on. Every unnecessary step was a step away from patient care, so every flow had to earn its place.
+    </p>
+ 
+    <img src="images/userFlowClinisync.png" alt="Clinisync user flow" class="case-image" style="width: 80%; margin: 0;" />
+ 
+    <h3>From Sketches to Structure</h3>
+ 
+    <p>
+      Early concepts were deliberately rough. Sketches and low-fidelity wireframes let me focus on the structure — how to segment content, where to place the most critical information, and how to make the layout feel clean without sacrificing depth. The goal was to design something that felt effortless, even when the underlying data was complex.
+    </p>
+ 
+    <div style="display: flex; gap: 1rem; align-items: flex-start;">
+      <img src="images/Clinisync_Lo.png" alt="Clinisync lo-fi sketch" class="case-image" style="width: 30%; margin: 0;" />
+      <img src="images/Dashboard_Lo.png" alt="Dashboard lo-fi sketch" class="case-image" style="width: 30%; margin: 0;" />
+      <img src="images/Inventory_Lo.png" alt="Inventory lo-fi sketch" class="case-image" style="width: 30%; margin: 0;" />
+    </div>
+ 
+  </div>
+ 
+  <!-- TEST -->
+  <div class="case-section">
+ 
+    <h2>Prototype &amp; Test</h2>
+ 
+    <h3>Putting It in Real Hands</h3>
+ 
+    <p>
+      Rather than wait until the design felt "finished," I brought low-fidelity wireframes into user testing early. I wanted to catch friction before it was baked in — to hear from people closest to the problem whether the app actually solved it or just looked like it did. Their feedback shaped the decisions that mattered most.
+    </p>
+ 
+    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+ 
+      <div style="display: flex; gap: 1rem; align-items: flex-start; flex: 1;">
+        <img src="images/Dashboard.jpg" alt="Dashboard prototype" class="case-image" style="width: 45%; margin: 0;" />
+        <div style="min-width: 140px; padding-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="border-left: 2px solid currentColor; padding-left: 0.75rem; font-size: 0.78rem; line-height: 1.4; opacity: 0.75;">
+            Changed nav bar to a hamburger menu — the original options were confusing users during testing.
+          </div>
+        </div>
+      </div>
+ 
+      <div style="display: flex; gap: 1rem; align-items: flex-start; flex: 1;">
+        <img src="images/Inventory.jpg" alt="Inventory prototype" class="case-image" style="width: 45%; margin: 0;" />
+        <div style="min-width: 140px; padding-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="border-left: 2px solid currentColor; padding-left: 0.75rem; font-size: 0.78rem; line-height: 1.4; opacity: 0.75;">
+            Hamburger menu kept consistently across screens for a unified, predictable navigation experience.
+          </div>
+          <div style="border-left: 2px solid currentColor; padding-left: 0.75rem; font-size: 0.78rem; line-height: 1.4; opacity: 0.75;">
+            Removed welcome text — it added visual noise without serving a functional purpose.
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+  <!-- REFLECTION -->
+  <div class="case-section">
+ 
+    <h2>Reflection</h2>
+ 
+    <p>
+      This project reinforced something I now carry into every design process: the work before the work matters most. Completing user flows, personas, and research before sketching a single screen wasn't just good practice — it was what kept every decision tethered to a real person's real problem.
+    </p>
+ 
+    <p>
+      If I continued Clinisync, I'd push further into automation — AI-driven inventory alerts, predictive reorder suggestions, scheduled ordering that takes one more task off an already full plate. The foundation is there. There's a lot more the app could do for the people who need it.
+    </p>
+ 
+  </div>
+ 
+  <!-- BACK BUTTON -->
+  <div class="back-to-portfolio">
+ 
+    <a href="homepage.html" class="btn-link">
+      <button class="btn">
+        Back to Portfolio
+      </button>
+    </a>
+ 
+  </div>
+ 
+</div>
+ 
+<!-- Shared JS -->
+<script src="script.js"></script>
+ 
+</body>
+</html>

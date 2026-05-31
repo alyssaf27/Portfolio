@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SYNC — Alyssa Falcon</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="case-nav">
+    <a href="homepage.html" class="back-btn">Back to Portfolio</a>
+    <div class="case-nav-links">
+      <a href="about.html">About Me</a>
+      <a href="homepage.html#projects">Projects</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+    </div>
+  </nav>
+
+  <main class="case-study-content">
+
+    <!-- META -->
+    <div class="case-meta">
+      <div class="meta-col">
+        <div class="meta-label">Role</div>
+        <div class="meta-value">Product Designer</div>
+      </div>
+      <div class="meta-col">
+        <div class="meta-label">Timeline</div>
+        <div class="meta-value">March 2026</div>
+        <div class="meta-skills">(3 days)</div>
+      </div>
+      <div class="meta-col">
+        <div class="meta-label">Event</div>
+        <div class="meta-value">FigBuild 2026</div>
+        <div class="meta-skills">Global Design-a-thon</div>
+      </div>
+      <div class="meta-col">
+        <div class="meta-label">Tools</div>
+        <div class="meta-skills">Figma<br>Figma Make</div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <h1 class="case-hero-title">SYNC</h1>
+
+    <p class="case-intro">
+      An app and Apple Watch wearable that helps Gen-Z track and visualize
+      <em>collective effervescence</em> — the electric feeling of being fully
+      in sync with the people and spaces around you.
+    </p>
+
+    <!-- 1. CHALLENGE -->
+    <section class="case-section">
+      <h2>The Challenge</h2>
+      <p>
+        For FigBuild 2026, Figma's annual global design hackathon, our team was given a speculative design prompt:
+      </p>
+      <div class="callout">
+        "Identify something intangible, invisible, or previously unmeasurable about the human sensory experience and design a speculative tool to track and influence it."
+      </div>
+      <p>
+        We had 3 days to brainstorm, research, iterate, and prototype our solution from scratch.
+      </p>
+    </section>
+
+    <!-- 2. UNDERSTANDING THE PROBLEM -->
+    <section class="case-section">
+      <h2>Understanding the Problem</h2>
+      <p>
+        We kept coming back to a feeling most people recognize but can't explain — that electric buzz when you're at a concert, dinner, or party and everything just clicks.
+      </p>
+      <p>
+        Sociologist Émile Durkheim called it <strong>collective effervescence</strong>:
+        the heightened sense of energy and connection that emerges when a group is fully present together.
+      </p>
+      <p>
+        Gen-Z is one of the most digitally connected generations in history — yet also one of the loneliest.
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;">
+        <div style="background:var(--ink);border-radius:16px;padding:24px;color:var(--white);text-align:center;">
+          <div style="font-family:'Fraunces',serif;font-size:44px;font-weight:900;color:var(--pink);line-height:1;">79%</div>
+          <div style="font-size:12px;color:#a09080;margin-top:8px;line-height:1.6;">of Gen-Z say they feel lonely often or sometimes</div>
+        </div>
+        <div style="background:var(--ink);border-radius:16px;padding:24px;color:var(--white);text-align:center;">
+          <div style="font-family:'Fraunces',serif;font-size:44px;font-weight:900;color:var(--pink);line-height:1;">0</div>
+          <div style="font-size:12px;color:#a09080;margin-top:8px;line-height:1.6;">apps exist to track shared emotional experiences in real time</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DAY 1 — RESEARCH & PERSONA -->
+    <section class="case-section">
+      <h2>Day 1 — Research & Persona</h2>
+      <p>
+        We interviewed Gen-Z participants to understand moments when they felt most energized around others. Their answers shaped a clear picture of who we were designing for.
+      </p>
+      <h3>Meet Rachel</h3>
+      <img src="images/SYNC_Persona.png" alt="SYNC Persona" style="width:60%;display:block;margin:0 auto;" />
+    </section>
+
+    <!-- 4. SYNC IS A TWO-PART PRODUCT -->
+    <section class="case-section">
+      <h2>SYNC is a Two-Part Product</h2>
+      <p>
+        A purely digital solution felt incomplete for something as physical and social as collective feeling.
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0;">
+        <div class="goal-card">
+          <div style="font-size:28px;margin-bottom:10px;">⌚</div>
+          <h4>The SYNC Watch</h4>
+          <p>An Apple Watch experience that passively detects sync moments through biometric signals.</p>
+        </div>
+        <div class="goal-card">
+          <div style="font-size:28px;margin-bottom:10px;">📱</div>
+          <h4>The SYNC App</h4>
+          <p>A personal sync journal helping users visualize their most energizing relationships and spaces.</p>
+        </div>
+      </div>
+      <img src="images/SYNC_Mock.png" alt="SYNC app" class="case-image" />
+    </section>
+
+    <!-- 5. DAY 2 — WIREFRAMES -->
+    <section class="case-section">
+      <h2>Day 2 — Wireframes</h2>
+      <p>
+        We explored low-fidelity flows around check-ins, wearable prompts, and weekly recaps.
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0;">
+        <img src="images/SYNC_Lo_Create.png" alt="SYNC wireframes" style="width:80%;border-radius:12px;border:2px solid var(--ink);display:block;" />
+        <img src="images/SYNC_Lo_Event.png" alt="SYNC wireframes" style="width:80%;border-radius:12px;border:2px solid var(--ink);display:block;" />
+        <img src="images/SYNC_Lo_Explore.png" alt="SYNC wireframes" style="width:80%;border-radius:12px;border:2px solid var(--ink);display:block;" />
+        <img src="images/SYNC_Lo.png" alt="SYNC wireframes" style="width:80%;border-radius:12px;border:2px solid var(--ink);display:block;" />
+      </div>
+    </section>
+
+    <!-- 6. DAY 3 — HIGH FIDELITY -->
+    <section class="case-section">
+      <h2>Day 3 — High Fidelity Prototype</h2>
+      <p>
+        Using Figma Make, we created a prototype focused on energetic visuals and emotionally-driven interactions.
+      </p>
+      <video controls style="width:100%;border-radius:8px;margin:20px 0;display:block;">
+        <source src="videos/SYNC_Demo.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <!-- 7. DESIGN GOALS -->
+    <section class="case-section">
+      <h2>Design Goals</h2>
+      <div class="design-goals-grid">
+        <div class="goal-card">
+          <h4>Awareness</h4>
+          <p>Help users recognize moments of collective energy.</p>
+        </div>
+        <div class="goal-card">
+          <h4>Insight</h4>
+          <p>Surface patterns across relationships and spaces.</p>
+        </div>
+        <div class="goal-card">
+          <h4>Privacy</h4>
+          <p>Give users control over biometric and social data.</p>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0;">
+        <img src="images/SYNC_Home.png" alt="SYNC home screen" style="width:80%;display:block;" />
+        <img src="images/SYNC_Party.png" alt="SYNC party screen" style="width:80%;display:block;" />
+        <img src="images/SYNC_HIFI4.png" alt="SYNC hifi screen" style="width:80%;display:block;" />
+        <img src="images/SYNC_Events.png" alt="SYNC events screen" style="width:80%;display:block;" />
+      </div>
+    </section>
+
+    <!-- 8. EDGE CASES -->
+    <section class="case-section">
+      <h2>Edge Cases</h2>
+      <div class="key-findings">
+        <ul>
+          <li>Biometric spikes may come from anxiety, not social joy.</li>
+          <li>Social comparison features could create pressure.</li>
+          <li>Users should reflect on experiences, not chase scores.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 9. REFLECTIONS -->
+    <section class="case-section">
+      <h2>Reflections</h2>
+      <p>
+        This project taught me how to design for emotion, not just functionality.
+      </p>
+      <p>
+        Working under a 3-day timeline pushed our team to make fast, intentional product decisions while keeping the experience grounded in real human connection.
+      </p>
+    </section>
+
+    <!-- BACK BUTTON -->
+    <div class="back-to-portfolio">
+      <a href="homepage.html" class="btn-link">
+        <button class="btn">Back to Portfolio</button>
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>
